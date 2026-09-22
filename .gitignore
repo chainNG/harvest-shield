@@ -1,0 +1,30 @@
+# Rust
+/target
+**/*.rs.bk
+Cargo.lock
+
+# Node
+node_modules/
+.pnpm-store/
+
+# Next.js
+.next/
+out/
+*.tsbuildinfo
+
+# Env and secrets
+.env
+.env.local
+.env.*.local
+
+# Snapshots managed elsewhere (regenerate locally if missing)
+*.snap.json.txt
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Deploy artifacts
+wasm32-unknown-unknown/
+*.wasm

@@ -1,0 +1,29 @@
+name: Bug report
+description: File a reproducible bug.
+title: "[BUG] "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: describe
+    attributes:
+      label: Bug description
+      description: What happened, what did you expect instead?
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: Minimal reproduction, including commands and inputs.
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Environment
+      description: Rust/SDK versions, soroban-cli version, network (testnet/mainnet).
+  - type: textarea
+    id: notes
+    attributes:
+      label: Additional context
+      description: Logs, snapshots, or related issues.

@@ -1,0 +1,38 @@
+name: Bounty / feature
+description: A described, self-contained piece of work with explicit acceptance criteria (matches the format used for maintained bounty programs).
+title: "[Bounty] "
+labels: ["help-wanted"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please keep the four sections below. Reviewers rely on them to
+        judge whether a contribution is *done*.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem & Goal
+      description: What is broken or missing today, and what must the finished result do?
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Context & Components
+      description: Which contract / app / doc does this touch?
+    validations:
+      required: true
+  - type: textarea
+    id: impl
+    attributes:
+      label: Implementation Details
+      description: The concrete design decisions and step-by-step expectations.
+    validations:
+      required: true
+  - type: textarea
+    id: verification
+    attributes:
+      label: Verification & Testing Requirements
+      description: The precise checks that define *done* (tests, edge cases, no storage mutation on rejections, etc.).
+    validations:
+      required: true
